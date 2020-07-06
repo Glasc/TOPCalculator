@@ -101,7 +101,6 @@ const addListeners = () => {
           }
           values.n1 = result;
           values.n2 = null;
-          display.style.filter = 'brightness(88%)';
         }
       }
     }
