@@ -15,6 +15,7 @@ body {
   justify-content: center;
   background-color: whitesmoke;
 }
+
 button {
   display: block;
   cursor: pointer;
@@ -22,11 +23,13 @@ button {
   border: none;
   font-size: 1.3rem;
 }
+
 button:hover {
   filter: brightness(80%);
   transition: ease 400ms;
   border: 1px solid black;
-} 
+}
+
 .calculator-wrapper {
   height: 440px;
   width: 300px;
@@ -35,9 +38,10 @@ button:hover {
   padding: .7em;
   border-radius: 15px;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 1.3fr repeat(5,1fr);
+  grid-template-rows: 1.3fr repeat(5, 1fr);
   grid-gap: 0.4em;
   box-shadow: 0 20px 50px rgba(85, 85, 85, 0.7);
+
   #display {
     background-color: #607D8B;
     border-radius: 10px;
@@ -49,17 +53,21 @@ button:hover {
     padding-left: 1em;
   }
 }
+
 .span-2 {
   grid-column: span 2;
 }
+
 .span-4 {
   grid-column: span 4;
 }
+
 .btn-blue {
   background-color: #455A64;
   color: white;
   border: none;
 }
+
 img {
   width: 25px;
 }

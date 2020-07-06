@@ -91,20 +91,17 @@ const addListeners = () => {
     } else if (e.target === equal) {
       if (values.n1 !== null && values.n2 !== null) {
         let result = (operate(values.operator, values.n1, values.n2));
-
         if (result.length > 15) {
           setDisplayValue('El pueblo...')
         } else {
-
           setDisplayValue(result);
           if (display.textContent.includes('.')) {
             result = result.toFixed(9);
-
             setDisplayValue(result);
-
           }
           values.n1 = result;
           values.n2 = null;
+          display.style.filter = 'brightness(88%)';
         }
       }
     }
