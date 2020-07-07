@@ -91,7 +91,8 @@ const addListeners = () => {
     } else if (e.target === equal) {
       if (values.n1 !== null && values.n2 !== null) {
         let result = (operate(values.operator, values.n1, values.n2));
-        if (result.length > 15) {
+        console.log(result.toString().length)
+        if (result.toString().length > 10) {
           setDisplayValue('El pueblo...')
         } else {
           setDisplayValue(result);
